@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg_top_color" format="color|reference" />
+    <attr name="home_btn_img" format="color|reference" />
+    <attr name="logo_img" format="color|reference" />
+    <attr name="week_text_color" format="color|reference" />
+    <attr name="date_bg_color" format="color|reference" />
+    <attr name="goal_bg_color" format="color|reference" />
+    <attr name="goal_img" format="color|reference" />
+    <attr name="goal_text_color" format="color|reference" />
+    <attr name="calendar_fisrt_color" format="color|reference" />
+    <attr name="calendar_second_color" format="color|reference" />
+    <attr name="calendar_third_color" format="color|reference" />
+    <attr name="dialog_bg_top_color" format="color|reference" />
+    <attr name="dialog_bg_bottom_color" format="color|reference" />
+    <attr name="dialog_arrow_left" format="color|reference" />
+    <attr name="dialog_arrow_right" format="color|reference" />
+    <attr name="popup_top_color" format="color|reference" />
+    <attr name="popup_bottom_color" format="color|reference" />
+
+
+
+</resources>

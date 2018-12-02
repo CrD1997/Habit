@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Blue主题-->
+    <style name="BlueTheme" parent="AppTheme">
+        <item name="bg_top_color">#88D4F6</item>
+        <item name="home_btn_img">@drawable/homebutton_boy</item>
+        <item name="logo_img">@drawable/logo_boy</item>
+        <item name="week_text_color">#88D4F6</item>
+        <item name="date_bg_color">#40B6DD</item>
+        <item name="goal_bg_color">#88D4F6</item>
+        <item name="goal_img">@drawable/goal_boy</item>
+        <item name="goal_text_color">#5FC2E3</item>
+        <item name="calendar_fisrt_color">#4EE2B7</item>
+        <item name="calendar_second_color">#66D3F9</item>
+        <item name="calendar_third_color">#40B6DD</item>
+        <item name="dialog_bg_top_color">#88D4F6</item>
+        <item name="dialog_bg_bottom_color">#40B6DD</item>
+        <item name="dialog_arrow_left">@drawable/arrowleft_template</item>
+        <item name="dialog_arrow_right">@drawable/arrowright_template</item>
+        <item name="popup_top_color">#8BD5F5</item>
+        <item name="popup_bottom_color">#4AABE1</item>
+
+    </style>
+
+    <!--Pink 主题-->
+    <style name="PinkTheme" parent="AppTheme">
+        <item name="bg_top_color">#F9BBDB</item>
+        <item name="home_btn_img">@drawable/homebutton_girl</item>
+        <item name="logo_img">@drawable/logy_girl</item>
+        <item name="week_text_color">#FAC2DF</item>
+        <item name="date_bg_color">#F67EAB</item>
+        <item name="goal_bg_color">#F9BBDB</item>
+        <item name="goal_img">@drawable/goal_girl</item>
+        <item name="goal_text_color">#F67EAB</item>
+        <item name="calendar_fisrt_color">#FFEFFF</item>
+        <item name="calendar_second_color">#FDDBEB</item>
+        <item name="calendar_third_color">#FFC4C5</item>
+        <item name="dialog_bg_top_color">#F9BBDB</item>
+        <item name="dialog_bg_bottom_color">#F67EAB</item>
+        <item name="dialog_arrow_left">@drawable/arrowleft_template_pink</item>
+        <item name="dialog_arrow_right">@drawable/arrowright_template_pink</item>
+        <item name="popup_top_color">#F9BBDB</item>
+        <item name="popup_bottom_color">#F67EAB</item>
+    </style>
+</resources>
