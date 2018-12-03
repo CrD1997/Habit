@@ -10,7 +10,7 @@
         <item name="goal_bg_color">#88D4F6</item>
         <item name="goal_img">@drawable/goal_boy</item>
         <item name="goal_text_color">#5FC2E3</item>
-        <item name="calendar_fisrt_color">#4EE2B7</item>
+        <item name="calendar_first_color">#4EE2B7</item>
         <item name="calendar_second_color">#66D3F9</item>
         <item name="calendar_third_color">#40B6DD</item>
         <item name="dialog_bg_top_color">#88D4F6</item>
@@ -32,7 +32,7 @@
         <item name="goal_bg_color">#F9BBDB</item>
         <item name="goal_img">@drawable/goal_girl</item>
         <item name="goal_text_color">#F67EAB</item>
-        <item name="calendar_fisrt_color">#FFEFFF</item>
+        <item name="calendar_first_color">#FFEFFF</item>
         <item name="calendar_second_color">#FDDBEB</item>
         <item name="calendar_third_color">#FFC4C5</item>
         <item name="dialog_bg_top_color">#F9BBDB</item>

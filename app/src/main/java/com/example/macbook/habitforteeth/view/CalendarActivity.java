@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -68,7 +69,6 @@ public class CalendarActivity extends AppCompatActivity implements CalendarContr
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
-
         WindowManager wm = (WindowManager) this.getSystemService(Context.WINDOW_SERVICE);
         width = wm.getDefaultDisplay().getWidth();
         height = wm.getDefaultDisplay().getHeight();
@@ -77,6 +77,7 @@ public class CalendarActivity extends AppCompatActivity implements CalendarContr
         new CalendarPresenter(this);
         //创建数据库
         databaseHelper=new DatabaseHelper(this);
+
         //初始化数据库
         //initStarData();
         //初始化view-list
@@ -92,6 +93,7 @@ public class CalendarActivity extends AppCompatActivity implements CalendarContr
         //初始化对话框，设置接口
         pickDialog = new PickDialog(this);
         pickDialog.setiPickDialog(this);
+        pickDialog.getWindow().setBackgroundDrawable(new BitmapDrawable());
 
         //切换主题弹窗
         homeBtn = (ImageButton) findViewById(R.id.button_home);
@@ -100,6 +102,7 @@ public class CalendarActivity extends AppCompatActivity implements CalendarContr
 
     //初始化数据库
     public void initStarData(){
+        presenter.deleteAll();
         presenter.initData();
     }
 
@@ -117,7 +120,6 @@ public class CalendarActivity extends AppCompatActivity implements CalendarContr
             return;
         }
         dialog(pos);
-        Toast.makeText(this, "you clicked view " + star.getWeek()+" "+star.getDay(), Toast.LENGTH_SHORT).show();
     }
 
     //初始化dialog
@@ -140,6 +142,7 @@ public class CalendarActivity extends AppCompatActivity implements CalendarContr
     public void onReward(String address) {
         Star s= starList.get(pos);
         s.number+=Integer.parseInt(pickDialog.getRewardNum());
+        //Toast.makeText(this, s.id+" "+s.week+" "+s.day+" "+s.number+"", Toast.LENGTH_SHORT).show();
         presenter.updateData(s);
         adapter.notifyDataSetChanged();
     }
@@ -169,7 +172,7 @@ public class CalendarActivity extends AppCompatActivity implements CalendarContr
                     editor.apply();
                     recreate();
                 }
-                Toast.makeText(this, "Change Theme", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Change Theme", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;

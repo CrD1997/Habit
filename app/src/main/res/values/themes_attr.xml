@@ -8,7 +8,7 @@
     <attr name="goal_bg_color" format="color|reference" />
     <attr name="goal_img" format="color|reference" />
     <attr name="goal_text_color" format="color|reference" />
-    <attr name="calendar_fisrt_color" format="color|reference" />
+    <attr name="calendar_first_color" format="color|reference" />
     <attr name="calendar_second_color" format="color|reference" />
     <attr name="calendar_third_color" format="color|reference" />
     <attr name="dialog_bg_top_color" format="color|reference" />

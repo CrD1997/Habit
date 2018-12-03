@@ -20,6 +20,7 @@ public interface CalendarContract {
 
         void initData();
         void updateData(Star s);
+        void deleteAll();
         ArrayList<Star> initList();
     }
 }

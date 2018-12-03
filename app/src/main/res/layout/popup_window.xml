@@ -32,7 +32,7 @@
                     android:layout_height="20dp"
                     android:paddingLeft="16dp"
                     android:text="YAYALE"
-                    android:textSize="14dp"
+                    android:textSize="16dp"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="center|left"/>
@@ -40,8 +40,8 @@
                     android:layout_width="150dp"
                     android:layout_height="15dp"
                     android:paddingLeft="16dp"
-                    android:text="上次同步   7月24日 15：00"
-                    android:textSize="10dp"
+                    android:text="上次同步 12月2日 15:00"
+                    android:textSize="12dp"
                     android:textColor="#ffffff"
                     android:gravity="center|left"/>
                 <LinearLayout
@@ -135,7 +135,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="left"
                 android:src="@drawable/user" />
             <TextView
@@ -143,7 +143,7 @@
                 android:layout_height="15dp"
                 android:paddingLeft="16dp"
                 android:text="改变主题"
-                android:textSize="10dp"
+                android:textSize="12dp"
                 android:textColor="#ffffff"
                 android:gravity="center|left"/>
         </LinearLayout>

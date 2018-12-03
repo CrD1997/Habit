@@ -37,11 +37,11 @@ public class CalendarPresenter implements CalendarContract.Presenter{
             databaseHelper.insert(s);
         }
         for(int i=1;i<8;i++){
-            Star s=new Star(i+7,2,i,1);
+            Star s=new Star(i+7,2,i,0);
             databaseHelper.insert(s);
         }
         for(int i=1;i<8;i++){
-            Star s=new Star(i+14,3,i,12);
+            Star s=new Star(i+14,3,i,0);
             databaseHelper.insert(s);
         }
     }
@@ -49,6 +49,11 @@ public class CalendarPresenter implements CalendarContract.Presenter{
     @Override
     public void updateData(Star s){
         databaseHelper.update(s);
+    }
+
+    @Override
+    public void deleteAll(){
+        databaseHelper.deleteAllData();
     }
 
     //初始化列表

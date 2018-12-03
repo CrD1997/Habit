@@ -54,6 +54,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase database = getWritableDatabase();
         return database.query("star", null, null, null, null, null, "id" + " ASC");
     }
-
+    public void deleteAllData() {
+        SQLiteDatabase database = getWritableDatabase();
+        database.delete("star", null, null);
+    }
 
 }
